@@ -1,7 +1,7 @@
 <div align="center">
   
 # 🎬 Adonis Action Token 
-Adonis Action Token create temporary token to perform specific actions like email validation, password recorvery & more possibilities. 
+Adonis Action Token create temporary token to perform specific actions like email validation, password recovery & more possibilities. 
 
 Works only for **Adonis v5**.
 
