@@ -10,6 +10,8 @@ Works only for **Adonis v5**.
 ![Tests](https://github.com/crbast/adonis-action-token/workflows/Tests/badge.svg?branch=main)
 ![CodeQL](https://github.com/crbast/adonis-action-token/workflows/CodeQL/badge.svg?branch=main)
 
+<br>
+
 </div>
 
 ## Dependencies
