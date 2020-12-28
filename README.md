@@ -5,6 +5,8 @@ Adonis Action Token create temporary token to perform specific actions like emai
 
 Works only for **Adonis v5**.
 
+#### 👷‍♀️ In progress 👷‍♂️
+
 <br>
 
 ![Tests](https://github.com/crbast/adonis-action-token/workflows/Tests/badge.svg?branch=main)
@@ -38,6 +40,12 @@ await ActionToken.verify('email-validation', actionToken)
 ```ts
 await (new ActionToken({ action: 'email-validation', uid: token })).delete()
 ```
+
+### Project example
+
+The project [`elloow - api`](https://github.com/elloow/elloow) use the action token concept (organisation creation with email link).
+
+## Installation 
 
 ## Dependencies
 - [`@adonisjs/redis@alpha`](https://github.com/adonisjs/redis)
