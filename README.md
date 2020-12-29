@@ -29,16 +29,22 @@ The token works like opaque token (only string identifier, all useful data are s
  * TTL : 30 minutes
  * Data : { email: 'myemail@crbast.ch' }
  */
-const actionToken = new ActionToken({ action: 'email-validation', expiration: 1800, data: { email: 'myemail@crbast.ch' } })
+const actionToken = await ActionToken.create('email-validation', 1800, { email: 'myemail@crbast.ch' }) // create(type: string, ttl: int, data: {} | string | undefined): string
 // actionToken = 1608568833696DtHvtHx2DvxeTiHRLshXwhVvIlb34k8yHor1jKlqV5
 ```
 2. Validate token (middleware)
 ```ts
-await ActionToken.verify('email-validation', actionToken)
+await ActionToken.verify('email-validation', actionToken) // verify(action: string, token: string): ActionToken
 ```
-3. Delete token 
+3. Get token data
 ```ts
-await (new ActionToken({ action: 'email-validation', uid: token })).delete()
+const token = new ActionToken('email-validation', token ) // ActionToken(action: string, token: string): ActionToken
+const data = token.data
+```
+4. Delete token 
+```ts
+const token = new ActionToken('email-validation', token ) // ActionToken(action: string, token: string): ActionToken
+await token.delete()
 ```
 
 ### Project example
