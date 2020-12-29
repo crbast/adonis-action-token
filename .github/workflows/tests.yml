@@ -36,4 +36,4 @@ jobs:
 
       - name: Japa run
         run: |
-          node japaFile.js
+          npm run test

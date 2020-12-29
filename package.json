@@ -4,7 +4,7 @@
   "description": "AdonisJS addon for action tokens",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node japaFile.js",
     "lint": "eslint . --ext=.ts",
     "lint-fix": "eslint . --fix"
   },
