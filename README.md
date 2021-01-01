@@ -24,7 +24,7 @@ The token works like opaque token (only string identifier, all useful data are s
 ### Example
 1. Create action token 
 ```ts
-// create(type: string, ttl: int, data: {} | string | undefined): string
+// create(type: string, ttl: int, data: string | undefined): string
 const actionToken = await ActionToken.create('email-validation', 1800, { email: 'myemail@crbast.ch' })
 
 // actionToken = 1608568833696DtHvtHx2DvxeTiHRLshXwhVvIlb34k8yHor1jKlqV5
