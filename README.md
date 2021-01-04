@@ -17,7 +17,7 @@ Works only for **Adonis v5**.
 </div>
 
 ## Description
-Action token is use to allow access (time-limited) to specific resource defined by action type. They are **not** intended to be used for authentication purposes.
+Action token is use to manage access (time-limited) for specific resource defined by action type. They are **not** intended to be used for authentication purposes.
 
 The token works like opaque token (only string identifier, all useful data are stored directly on redis).
 
