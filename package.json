@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/crbast/adonis-action-token#readme",
   "dependencies": {
-    "@poppinss/utils": "^3.0.3",
+    "@poppinss/utils": "^3.0.4",
     "crypto-random-string": "^3.3.0"
   },
   "devDependencies": {
